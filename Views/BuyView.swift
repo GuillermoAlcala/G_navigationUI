@@ -8,6 +8,7 @@
 import SwiftUI
 struct BuyView: View {
     let _Iphone13 = "https://www.apple.com/mx/shop/buy-iphone/iphone-13-pro"
+    let mensaje=""
   //  @EnvironmentObject var views: SettingViews
     var body: some View {
         NavigationView {
