@@ -28,7 +28,6 @@ struct BuyView: View {
                                     Link(destination: URL(string:_Iphone13)!){
                                         MoreInformation()
                                     }
-                                
                         }
                                 //.frame(height:600)
                     }//img
@@ -114,19 +113,26 @@ struct BuyView: View {
                     }
                 }
             }.navigationTitle("Comprar")
+                .toolbar{
+                    VStack{
+                    //NavigationLink("Account", destination: AccountView())
+                        
+                        NavigationLink(destination:AccountView()) {
+                            Image(systemName: "person.crop.circle")
+                                .foregroundColor(.indigo)
+                        }
+                            //.font(.system(size: 20))
+
+                    
+                    }
+                    
+                }//Toolbar
+                 
         }//list
         //.listRowBackground(Color.white)
 } //body
 }//struc
-   /*   .toolbar{
-          VStack{
-              Image(systemName: "gamecontroller.fill")
-                  .foregroundColor(.indigo)
-
-          }
-          
-      }//Toolbar
-       */
+      
 struct BuyView_Previews: PreviewProvider {
     static var previews: some View {
         BuyView()
