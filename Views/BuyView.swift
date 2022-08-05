@@ -9,13 +9,14 @@ import SwiftUI
 struct BuyView: View {
     let _Iphone13 = "https://www.apple.com/mx/shop/buy-iphone/iphone-13-pro"
     let mensaje=""
+    @State var isPresented: Bool=false
   //  @EnvironmentObject var views: SettingViews
     var body: some View {
         NavigationView {
             
             List(0 ..< 1){ item in
                 ZStack() {
-                    HStack(){
+                    HStack{
                             Image(systemName: "shippingbox")
                             //.scaledToFit()
                             //.font(.system(size: 30))
@@ -105,50 +106,52 @@ struct BuyView: View {
                             }
                             Divider()
                             VStack{
+
                                 Text("Destacados")
                                     .font(.system(size: 25))
                                     .bold()
+                                Button("Modal"){
+                                    isPresented=true
+                                }
+                            }.sheet(isPresented: $isPresented,
+                                    onDismiss: {isPresented=false},
+                                    content: {
+                                AccountView_Modal()
                             }
-                        }
-                    }
-                }
+                                    
+
+                            )
+                        }//VStack
+                    }//Zstack
+                    
             }.navigationTitle("Comprar")
                 .toolbar{
                     VStack{
                     //NavigationLink("Account", destination: AccountView())
                         
-                        NavigationLink(destination:AccountView()) {
+                        NavigationLink(destination:ModalLoguin()) {
                             Image(systemName: "person.crop.circle")
-                                .foregroundColor(.indigo)
+                                .foregroundColor(Color.primary)
                         }
-                            //.font(.system(size: 20))
-
-                    
+                        
                     }
                     
                 }//Toolbar
-                 
-        }//list
-        //.listRowBackground(Color.white)
+
+                
+                
+                
+}//list
+        }    //.listRowBackground(Color.white)
 } //body
 }//struc
-      
 struct BuyView_Previews: PreviewProvider {
     static var previews: some View {
         BuyView()
+            .preferredColorScheme(.dark)
             
     }
 }
-
-
-
-
-/*
- 
-
-
- */
-
 
 struct MoreInformation: View {
     var body: some View {
@@ -156,3 +159,4 @@ struct MoreInformation: View {
             .font(.system(size: 14))
     }
 }
+

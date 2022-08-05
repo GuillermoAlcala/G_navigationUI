@@ -12,6 +12,7 @@ struct navigationUI: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            //CardsView: en esta viene la clase de las tarjetas en ScrollView HyV
             
         }
     }

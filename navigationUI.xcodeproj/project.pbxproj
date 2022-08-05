@@ -16,6 +16,11 @@
 		5E39CD81287E2BCD0072D737 /* navigationUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39CD80287E2BCD0072D737 /* navigationUIUITestsLaunchTests.swift */; };
 		5E39CD8F287E2DFD0072D737 /* VentanaModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39CD8E287E2DFD0072D737 /* VentanaModal.swift */; };
 		5E47EE03289051F100C66AD0 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47EE02289051F100C66AD0 /* AccountView.swift */; };
+		5E47EE052890969C00C66AD0 /* AccountView_Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47EE042890969C00C66AD0 /* AccountView_Modal.swift */; };
+		5E47EE072891A7E500C66AD0 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47EE062891A7E500C66AD0 /* Account.swift */; };
+		5E47EE092891DE8D00C66AD0 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47EE082891DE8D00C66AD0 /* DevicesView.swift */; };
+		5E47EE0B2891E26800C66AD0 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47EE0A2891E26800C66AD0 /* CardsView.swift */; };
+		5E47EE0D2894719D00C66AD0 /* LoguinModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47EE0C2894719D00C66AD0 /* LoguinModalView.swift */; };
 		5E8C1E58288A2FE200879A8C /* Buy_Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C1E57288A2FE200879A8C /* Buy_Models.swift */; };
 		5E9C03792880868200080783 /* TabViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C03782880868200080783 /* TabViewScreen.swift */; };
 		5E9C037B28808BB300080783 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C037A28808BB300080783 /* BuyView.swift */; };
@@ -56,6 +61,11 @@
 		5E39CD80287E2BCD0072D737 /* navigationUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E39CD8E287E2DFD0072D737 /* VentanaModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentanaModal.swift; sourceTree = "<group>"; };
 		5E47EE02289051F100C66AD0 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		5E47EE042890969C00C66AD0 /* AccountView_Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView_Modal.swift; sourceTree = "<group>"; };
+		5E47EE062891A7E500C66AD0 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		5E47EE082891DE8D00C66AD0 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		5E47EE0A2891E26800C66AD0 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		5E47EE0C2894719D00C66AD0 /* LoguinModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoguinModalView.swift; sourceTree = "<group>"; };
 		5E8C1E57288A2FE200879A8C /* Buy_Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buy_Models.swift; sourceTree = "<group>"; };
 		5E9C03782880868200080783 /* TabViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewScreen.swift; sourceTree = "<group>"; };
 		5E9C037A28808BB300080783 /* BuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
@@ -161,6 +171,10 @@
 				5E9C038028808BF300080783 /* SearchView.swift */,
 				5E9C038228808C3200080783 /* ShoppingView.swift */,
 				5E47EE02289051F100C66AD0 /* AccountView.swift */,
+				5E47EE042890969C00C66AD0 /* AccountView_Modal.swift */,
+				5E47EE082891DE8D00C66AD0 /* DevicesView.swift */,
+				5E47EE0A2891E26800C66AD0 /* CardsView.swift */,
+				5E47EE0C2894719D00C66AD0 /* LoguinModalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8C1E57288A2FE200879A8C /* Buy_Models.swift */,
+				5E47EE062891A7E500C66AD0 /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,17 +327,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E47EE03289051F100C66AD0 /* AccountView.swift in Sources */,
+				5E47EE0D2894719D00C66AD0 /* LoguinModalView.swift in Sources */,
 				5E39CD66287E2BCC0072D737 /* ContentView.swift in Sources */,
+				5E47EE0B2891E26800C66AD0 /* CardsView.swift in Sources */,
 				5E9C037D28808BCD00080783 /* SessionView.swift in Sources */,
 				5E8C1E58288A2FE200879A8C /* Buy_Models.swift in Sources */,
 				5E39CD8F287E2DFD0072D737 /* VentanaModal.swift in Sources */,
 				5EC0F4152884DAC300672FCE /* Games.swift in Sources */,
+				5E47EE092891DE8D00C66AD0 /* DevicesView.swift in Sources */,
 				5E9C03792880868200080783 /* TabViewScreen.swift in Sources */,
 				5E9C038128808BF300080783 /* SearchView.swift in Sources */,
 				5E9C037B28808BB300080783 /* BuyView.swift in Sources */,
 				5E39CD64287E2BCC0072D737 /* navigationUI.swift in Sources */,
 				5E9C037F28808BE900080783 /* YouView.swift in Sources */,
 				5E9C038328808C3200080783 /* ShoppingView.swift in Sources */,
+				5E47EE052890969C00C66AD0 /* AccountView_Modal.swift in Sources */,
+				5E47EE072891A7E500C66AD0 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
