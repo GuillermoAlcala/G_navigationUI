@@ -10,7 +10,7 @@ import SwiftUI
 struct AccountView_Modal: View {
     var body: some View {
         NavigationView{
-        NavigationLink(destination: SessionView())
+        NavigationLink(destination: SessionView(mensaje: "variable"))
             {
                 List(oceans) {
                     Text($0.name)

@@ -45,7 +45,7 @@ struct CardsView: View {
                     
                     
                     VStack{
-                        NavigationLink(destination: DevicesView()){
+                        NavigationLink(destination: DevicesView(mensaje: "")){
                          Image("ElizabethVestido")
                                 .resizable()
                                 .scaledToFill()

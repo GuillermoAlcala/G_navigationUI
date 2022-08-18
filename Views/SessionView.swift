@@ -7,6 +7,7 @@
 
 import SwiftUI
 struct SessionView: View {
+    @State var mensaje:String
  //   @EnvironmentObject var views: SettingViews2
     var body: some View {
         
@@ -23,6 +24,7 @@ struct SessionView: View {
                         VStack(alignment:.trailing) {
                             Text("Desde $29,000")
                                 .font(.system(size:14))
+                            Text(mensaje)
 
                         
                 }
@@ -34,7 +36,7 @@ struct SessionView: View {
 
 struct SessionView_Previews: PreviewProvider {
     static var previews: some View {
-        SessionView()
+        SessionView(mensaje: "")
     }
 }
 

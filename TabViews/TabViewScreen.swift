@@ -19,7 +19,7 @@ struct TabViewScreen: View {
                         }//tabItem
 //                    background(.black)
                     
-                    SessionView().tabItem(){
+                    SessionView(mensaje: "mensaje").tabItem(){
                         Label("Sesiones",systemImage: "captions.bubble")
                     }
                     
@@ -32,6 +32,10 @@ struct TabViewScreen: View {
                     
                     ShoppingView().tabItem(){
                         Label("Bolsa",systemImage: "cart")
+                    }
+                    
+                    ShoppingView().tabItem(){
+                        Label("Trash",systemImage: "trash")
                     }
                     
                     }//TabView

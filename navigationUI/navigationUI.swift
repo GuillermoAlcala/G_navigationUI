@@ -11,7 +11,7 @@ import SwiftUI
 struct navigationUI: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardsView()
             //CardsView: en esta viene la clase de las tarjetas en ScrollView HyV
             
         }
